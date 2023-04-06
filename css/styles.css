@@ -1,0 +1,315 @@
+/**
+  |============================
+  | Root
+  |============================
+*/
+:root {
+
+ /* BG colors */
+  --main-bg-color:#ffffff;
+  --second-bg-color:#f4f4fd;
+  --footer-bg-color:#2E2F42;
+  --ourteam-bg-color:#f4f4fd;
+
+  /* Text colors */
+  --main-text-color: #434455;
+  --main-btn-color: #ffffff;
+  --main-title-color:#2E2F42;
+
+   /* Fonts */
+   --primary-font: 'Roboto', sans-serif;
+
+
+  /* logo colors */
+  --first-logo-color:#4d5ae5;
+  --second-logo-color:#2e2f42;
+  --third-logo-color:#f4f4fd;
+ 
+  /* Button colors */
+  --first-btnlink-color: #4d5ae5;
+  --second-btnlink-color: #404BBF;
+
+}
+
+
+
+/**
+  |============================
+  | Body
+  |============================
+*/
+.body{
+  font-size: 16px;
+  font-family: var(--primary-font);
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--main-title-color);
+}
+
+.list{ list-style: none;}
+
+
+/* reset */
+.link { 
+  color: currentColor;
+  text-decoration: none; 
+}
+.link:hover, .link:focus {
+color: var(--second-btnlink-color);
+}
+  
+
+
+/**
+  |============================
+  | Logo section
+  |============================
+*/
+.logo {
+font-family: 'Raleway', sans-serif;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.17;
+text-transform: uppercase;
+letter-spacing: 0.03em; 
+
+/* Web */
+color: var(--first-logo-color);
+}
+
+/* Studio */
+.logo-second-color { color: var(--second-logo-color);}
+.logo-third-color { color: var(--third-logo-color);}
+
+
+
+/**
+  |============================
+  | Navigation section
+  |============================
+*/
+
+.header{
+color: var(--main-title-color);
+}
+
+
+.header-nav-link{
+font-family:  var(--primary-font);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--main-title-color);
+
+}
+
+.header-nav-link:hover, .header-nav-link:focus {
+  color: var(--second-btnlink-color);}
+
+
+
+/**
+  |============================
+  | Contacts section 
+  |============================
+*/
+.contacts{
+  font-style: normal;
+}
+.contacts-links {
+  font-family:  var(--primary-font);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color)
+
+}
+
+
+
+/**
+  |============================
+  | Index - main section - 1 page
+  |============================
+*/
+
+.main {
+  text-align: center;
+  background-color: var(--main-title-color);
+}
+.main-header {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--main-btn-color);
+}
+
+.main-button{
+  font-family:  var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 16px 32px 16px 32px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--first-btnlink-color);
+  color: var(--main-btn-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+  
+.main-button:hover, .main-button:focus {
+  background-color: var(--second-btnlink-color);
+}
+
+
+
+/**
+  |============================
+  | Skills section - 1 page
+  |============================
+*/
+.second-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+  text-transform: capitalize;
+
+}
+.skills-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+}
+.skills-text {
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: var(--main-text-color)
+}
+
+
+
+/**
+  |============================
+  | What are we doing - section - 1 page
+  |============================
+*/
+
+/**
+  |============================
+  | Our team - section  - 1 page
+  |============================
+*/
+.team {
+  background-color: var(--ourteam-bg-color);
+}
+.team-item {
+  background-color: var(--main-bg-color);
+}
+.team-title {
+  letter-spacing: 0.02em;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--main-title-color);
+}
+.team-names {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+}
+
+.team-text {
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: var(--main-text-color)
+}
+
+
+
+/**
+  |============================
+  | Portfolio section - 2 page
+  |============================
+*/
+
+.portfolio-butt-filter {
+  font-family:  var(--primary-font);
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 4px;
+  border: 1px solid #e7e9fc;
+
+  background-color: var(--second-bg-color);
+  color: var(--first-btnlink-color);
+  
+}
+
+.portfolio-butt-filter:hover, .portfolio-butt-filter:focus {
+  cursor: pointer;
+  border: none;
+  color: #ffffff;
+  background-color: #404bbf;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+ 
+}
+
+.portfolio-item {
+  background: var(--primary-bg-color);
+
+}
+.portfolio-text-title {
+  font-family:  var(--primary-font);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+
+}
+
+.portfolio-text-text {
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: var(--main-text-color)
+}
+
+
+
+/**
+  |============================
+  | Footer - section
+  |============================
+*/
+
+.footer {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--footer-bg-color);
+  color: var(--third-logo-color);
+
+}
