@@ -1,8 +1,21 @@
 /**
   |============================
-  | Root
+  | Root and other
   |============================
 */
+
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
 :root {
 
  /* BG colors */
@@ -50,6 +63,12 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--main-title-color);
 }
 
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
 
 
 /* reset start */
@@ -86,7 +105,6 @@ button {
 
 
 
-
 /**
   |============================
   | Logo section
@@ -98,7 +116,8 @@ font-weight: 800;
 font-size: 18px;
 line-height: 1.17;
 text-transform: uppercase;
-letter-spacing: 0.03em; 
+letter-spacing: 0.03em;
+margin-right: 76px;
 
 /* Web */
 color: var(--first-logo-color);
@@ -106,7 +125,8 @@ color: var(--first-logo-color);
 
 /* Studio */
 .logo-second-color { color: var(--second-logo-color);}
-.logo-third-color { color: var(--third-logo-color);}
+.logo-third-color { color: var(--third-logo-color);
+}
 
 
 
@@ -118,8 +138,13 @@ color: var(--first-logo-color);
 
 .header{
 color: var(--main-title-color);
+padding: 24px 156px;
 }
 
+.header-container{
+  display: flex;
+  align-items: center;
+}
 
 .header-nav-link{
 font-family:  var(--primary-font);
@@ -128,32 +153,54 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--main-title-color);
-
 }
 
-.header-nav-link:hover, .header-nav-link:focus {
-  color: var(--second-btnlink-color);}
+.header-nav-link:hover, 
+.header-nav-link:focus {
+  color: var(--second-btnlink-color);
+}
 
+.head-navigation {
+  display: flex;
+  align-items: center;
+}
 
+.navigation-list{
+  display: flex;
+  gap:40px;
+
+}
 
 /**
   |============================
   | Contacts section 
   |============================
 */
-.contacts{
-  font-style: normal;
+.contact {
+  font-style: inherit;
+  margin-left: auto;
 }
-.contacts-links {
-  font-family:  var(--primary-font);
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--main-text-color)
 
+.contact-list {
+  display: flex;
+  text-align: right;
+  gap: 40px;
 }
+
+.contact-link{
+    font-family:  var(--primary-font);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color)
+  }
+  
+  .contact-link:hover,
+  .contact-link:focus {
+    color: var(--second-btnlink-color);
+  }
 
 
 
@@ -163,7 +210,7 @@ color: var(--main-title-color);
   |============================
 */
 
-.main {
+.big-pic-description {
   text-align: center;
   background-color: var(--main-title-color);
 }
