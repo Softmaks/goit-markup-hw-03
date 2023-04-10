@@ -96,7 +96,9 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul,
+ol {
   margin: 0;
 }
 
@@ -324,7 +326,6 @@ button {
 
 .wotd-list-item {
   margin-right: 24px;
-  width: calc((1128 - 2 * 24px) / 3);
 }
 
 /**
@@ -338,6 +339,7 @@ button {
 
 .team-list {
   display: flex;
+  gap: 24px;
 }
 
 .team-main-title {
@@ -353,8 +355,8 @@ button {
 }
 
 .team-item {
-  width: 264px;
-  flex-basis: calc((100% - 24px)/4);
+
+  flex-basis: calc((100% - 72px) / 4);
   background-color: var(--main-bg-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -364,13 +366,6 @@ button {
 
 .team-descr{
   padding: 32px 16px;
-}
-
-.team-item-img{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  text-align: center;
 }
 
 
@@ -387,6 +382,7 @@ button {
   letter-spacing: 0.02em;
   color: var(--main-title-color);
   text-align: center;
+  margin-top: 32px;
   margin-bottom: 8px;
 }
 
