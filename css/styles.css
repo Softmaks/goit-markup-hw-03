@@ -301,9 +301,8 @@ button {
   color: var(--main-text-color);
 }
 
-.skill-item{
+.skills-list .skill-item{
   flex-basis: calc((100% - 72px)/ 4))
-
 }
 
 /**
@@ -334,7 +333,7 @@ button {
   gap: 24px;
 }
 
-.wotd-list-item {
+.wotd-list .wotd-list-item {
   flex-basis: calc((100% - 48px) / 3);
   margin-right: 24px;
 }
