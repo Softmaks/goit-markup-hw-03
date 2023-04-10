@@ -70,7 +70,7 @@ h6 {
   margin-left: auto;
   margin-right: auto;
 
-  outline: 2px solid red;
+  outline: 0px;
 }
 
 /* reset start */
@@ -335,6 +335,8 @@ button {
 */
 .team {
   background-color: var(--ourteam-bg-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-list {
