@@ -64,21 +64,21 @@ h6 {
 
 .container {
   width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
-  outline: 2px solid red;
   align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px;
+
+  outline: 2px solid red;
 }
 
 /* reset start */
 
 .list {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .link {
@@ -403,7 +403,7 @@ button {
 
 /**
   |============================
-  | Portfolio section - 2 page
+  | PF section - 2 page
   |============================
 */
 
@@ -412,19 +412,23 @@ button {
   padding-bottom: 120px;
 }
 
-.portfolio-filters{
+.pf-filters{
   display: flex;
-  width: 600px;
+  justify-content: center;
   margin: auto 0;
   margin-bottom: 72px;
   gap: 24px;
 }
 
-.portfolio-filters.center{
-  justify-content: center;
+.pf-list-img {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 
-.portfolio-butt-filter {
+
+.pf-butt-filter {
   font-family: var(--primary-font);
   letter-spacing: 0.04em;
   font-weight: 500;
@@ -437,11 +441,11 @@ button {
   color: var(--first-btnlink-color);
 
   padding: 12px 24px;
-  border-radius: 4px; 
+  border-radius: 4px;
 }
 
-.portfolio-butt-filter:hover,
-.portfolio-butt-filter:focus {
+.pf-butt-filter:hover,
+.pf-butt-filter:focus {
   cursor: pointer;
   border: none;
   color: var(--main-btn-color);
@@ -450,43 +454,32 @@ button {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-item-card {
-  padding: 24px 0;
-  width: calc((100% - 48px)/3);
+.pf-item-card {
+  width: calc((100% - 48px) / 3);
 }
 
-.pf-title-text{
 
-background: var(--primary-bg-color);
-box-sizing: border-box;
-width: 360px;
-padding-bottom: 32px;
-
+.pf-for-imgtext{
+padding: 32px 16px;
+border: 1px solid #e7e9fc;
 }
 
-.portfolio-text-title {
+.pf-text-title {
+  color: var(--main-title-color);
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--main-title-color);
-  margin-top: auto;
+  
   margin-bottom: 8px;
 
 }
 
-.portfolio-text-text {
+.pf-text-text {
   letter-spacing: 0.02em;
   line-height: 1.5;
   color: var(--main-text-color);
-}
-
-.portfolio-list-img {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 48px;
-  column-gap: 24px;
 }
 
 
