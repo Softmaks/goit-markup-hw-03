@@ -19,147 +19,190 @@ rel="stylesheet">
 
 
 
- <!-- Header selection-->
+  <!-- Header selection-->
 <body class="body">
-<header>
-<nav>
-<a href="./index.html" class="logo link">Web<span class="logo-second-color">Studio</span></a>
-        <ul class="list">
+<header class="header">
+<div class="header-container container">
+    <nav class="head-navigation">
+        <a href="./index.html" class="logo link">Web<span class="logo-second-color">Studio</span></a>
+        <ul class="navigation-list list">
             <li>
-                <a href="./index.html" class="header-nav-link link">Studio</a>
-            </li>
+                <a href="./index.html" class="header-nav-link link">Studio</a></li>
             <li>
-                <a href="./portfolio.html" class="header-nav-link link">Portfolio</a>
-            </li>
+                <a href="./portfolio.html" class="header-nav-link link">Portfolio</a></li>
             <li>
-                <a href="" class="header-nav-link link">Contacts</a>
-            </li>
+                <a href="" class="header-nav-link link">Contacts</a></li>
         </ul>
-</nav>
-<address class="contacts">
-<ul class="list">
-    <li><a href="mailto:info@devstudio.com" class="contacts-links link">info@devstudio.com</a></li>
-    <li><a href="tel:+110001111111" class="contacts-links link">+11 (000) 111-11-11</a></li>
-</ul>
-</address>
+    </nav>
+    <address class="contact">
+        <ul class="contact-list list">
+            <li class="contact-list-item"><a href="mailto:info@devstudio.com" class="contact-link link">info@devstudio.com</a></li>
+            <li class="contact-list-item"><a href="tel:+110001111111" class="contact-link link">+11 (000) 111-11-11</a></li>
+        </ul>
+    </address>
+</div>
 </header>
 
 <!-- Main selection -->
 <main>
 <!-- Buttons -->   
-<section>
+<section class="portfolio">
+<div class="container">
 <h1 hidden>Photo-portfolio</h1>
-<ul class="list">
-<li><button type="button" class="portfolio-butt-filter list">All</button></li>
-<li><button type="button" class="portfolio-butt-filter list">Web Site</button></li>
-<li><button type="button" class="portfolio-butt-filter list">App</button></li>
-<li><button type="button" class="portfolio-butt-filter list">Design</button></li>
-<li><button type="button" class="portfolio-butt-filter list">Marketing</button></li>
+<ul class="portfolio-filters center list">
+    <li class="portfolio-list-filter">
+        <button type="button" class="portfolio-butt-filter list">All</button></li>
+    <li class="portfolio-list-filter">
+        <button type="button" class="portfolio-butt-filter list">Web Site</button></li>
+    <li class="portfolio-list-filter">
+        <button type="button" class="portfolio-butt-filter list">App</button></li>
+    <li class="portfolio-list-filter">
+        <button type="button" class="portfolio-butt-filter list">Design</button></li>
+    <li class="portfolio-list-filter">
+        <button type="button" class="portfolio-butt-filter list">Marketing</button></li>
 </ul>
 
 
-<ul class="portfolio-list list">
-    <li class="portfolio-item">
+<ul class="portfolio-list-img list">
+    <li class="portfolio-item-card">
         <a href="" class="portfolio-item-link link">
             <img 
             src="./images/img-1.jpg" 
             alt="Banking App"
-            width="360" height="300">
+            width="360"
+            class="prf-item-photo"
+            >
+            <div class="pf-title-text">
             <h2 class="portfolio-text-title">Banking App Interface Concept</h2>
             <p class="portfolio-text-text">App</p>
         </a>    
+        </div>
     </li>
     <li class="portfolio-item">
         <a href="" class="portfolio-item-link link">
             <img 
-            src="./images/img-2.jpg" 
+            src="./images/img-2.jpg"
             alt="Cashless Payment"
-            width="360" height="300">
+            width="360"
+            class="prf-item-photo"
+            >
+            <div class="pf-title-text">
             <h2 class="portfolio-text-title">Cashless Payment</h2>
             <p class="portfolio-text-text">Marketing</p>
         </a>
+        </div>
     </li>
     <li class="portfolio-item">
         <a href="" class="portfolio-item-link link">
             <img 
             src="./images/img-3.jpg" 
             alt="Meditation App"
-            width="360" height="300">
+            width="360"
+            class="prf-item-photo"
+            >
+            <div class="pf-title-text">
             <h2 class="portfolio-text-title">Meditation App</h2>
             <p class="portfolio-text-text">App</p>
         </a>
+        </div>
     </li>
     <li class="portfolio-item">
         <a href="" class="portfolio-item-link link">
             <img 
             src="./images/img-4.jpg" 
             alt="Taxi Service"
-            width="360" height="300">
+            width="360"
+            class="prf-item-photo"
+            >
+            <div class="pf-title-text">
             <h2 class="portfolio-text-title">Taxi Service</h2>
             <p class="portfolio-text-text">Marketing</p>
         </a>
+        </div>
     </li>
     <li class="portfolio-item">
         <a href="" class="portfolio-item-link link">
             <img 
             src="./images/img-5.jpg" 
             alt="Screen Illustrations"
-            width="360" height="300">
+            width="360"
+            class="prf-item-photo"
+            >
+            <div class="pf-title-text">
             <h2 class="portfolio-text-title">Screen Illustrations</h2>
             <p class="portfolio-text-text">Design</p>
         </a>
+        </div>
     </li>
     <li class="portfolio-item">
         <a href="" class="portfolio-item-link link">
             <img 
             src="./images/img-6.jpg" 
             alt="Online Courses"
-            width="360" height="300">
+            width="360"
+            class="prf-item-photo"
+
+            >
+            <div class="pf-title-text">
             <h2 class="portfolio-text-title">Online Courses</h2>
             <p class="portfolio-text-text">Marketing</p>
         </a>
+        </div>
     </li>
     <li class="portfolio-item">
         <a href="" class="portfolio-item-link link">
             <img 
             src="./images/img-7.jpg" 
             alt="Instagram Stories"
-            width="360" height="300">
+            width="360"
+            class="prf-item-photo"
+            >
+            <div class="pf-title-text">
             <h2 class="portfolio-text-title">Instagram Stories Concept</h2>
             <p class="portfolio-text-text">Design</p>
         </a>
+        </div>
     </li>
     <li class="portfolio-item">
         <a href="" class="portfolio-item-link link">
             <img 
             src="./images/img-8.jpg" 
             alt="Organic Food"
-            width="360" height="300">
+            width="360"
+            class="prf-item-photo"
+            >
+            <div class="pf-title-text">
             <h2 class="portfolio-text-title">Organic Food</h2>
             <p class="portfolio-text-text">Web Site</p>
         </a>
+        </div>
     </li>
     <li class="portfolio-item">
         <a href="" class="portfolio-item-link link">
             <img 
             src="./images/img-9.jpg" 
             alt="Fresh Coffee"
-            width="360" height="300">
+            width="360"
+            class="prf-item-photo"
+            >
+            <div class="pf-title-text">
             <h2 class="portfolio-text-title">Fresh Coffee</h2>
             <p class="portfolio-text-text">Web Site</p>
         </a>
+        </div>
     </li>
 </ul>
+</div>
 </section>
 </main>
 
 
-<!-- Footer selection -->
-<footer class="footer">
-<a href="./index.html" class="logo link">Web<span class="logo-third-color">Studio</span></a>
-<p>Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
-</footer>
-
-
-</body>
-</html>
+    <!-- Footer selection -->
+    <footer class="footer">
+        <div class="container">
+            <a href="./index.html" class="footer-logo logo link">Web<span class="logo-third-color">Studio</span></a>
+            <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+        </div>
+    </footer>
+    </body>
+    </html>
