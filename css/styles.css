@@ -23,6 +23,7 @@
 
   /* Fonts */
   --primary-font: "Roboto", sans-serif;
+  --footer-font: "Roboto", sans-serif;
 
   /* logo colors */
   --first-logo-color: #4d5ae5;
@@ -57,13 +58,11 @@ h6 {
 
 .container {
   width: 1158px;
-  align-items: center;
+
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
-  outline: 0px;
 }
 
 /* reset start */
@@ -209,7 +208,7 @@ button {
 
 /**
   |============================
-  | Index - main section - 1 page
+  | Index - Section №1 - Description
   |============================
 */
 
@@ -235,24 +234,25 @@ button {
 }
 
 .main-button {
-  font-family: var(--primary-font);
+
+  margin: 0 auto;
+  display: block;
+  border: none;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  padding: 16px 32px 16px 32px;
+  padding: 16px 32px;
   min-width: 169px;
-  height: 56px;
+  min-height: 56px;
   border-radius: 4px;
   cursor: pointer;
+
+  font-family: var(--primary-font);
   background-color: var(--first-btnlink-color);
   color: var(--main-btn-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  border: none;
 }
 
 .main-button:hover, .main-button:focus {
@@ -263,14 +263,12 @@ button {
 
 /**
   |============================
-  | Skills section - 1 page
+  | Index - Section №2 - Skills
   |============================
 */
 
 .skills-main-slection {
   padding: 120px 0;
-  width: 1128px;
-  margin: auto;
 }
 
 .skills-main-title {
@@ -305,14 +303,28 @@ button {
   flex-basis: calc((100% - 72px)/ 4);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /**
   |============================
-  | What are we doing - section - 1 page
+  | Index - Section №3 - What are we doing
   |============================
 */
 
 .what-our-team-doing {
-  padding: 120px 156px;
+  padding-bottom: 120px;
 }
 
 .wotd-main-title {
@@ -339,7 +351,7 @@ button {
 
 /**
   |============================
-  | Our team - section  - 1 page
+  | Index - Section №3 - Our team
   |============================
 */
 .team {
@@ -370,6 +382,10 @@ button {
   background-color: var(--main-bg-color);
 }
 
+.team-item:nth-child(n-1) {
+  margin-right: 24px;
+}
+
 .team-descr{
   padding: 32px 16px;
   border-radius: 0px 0px 4px 4px;
@@ -389,26 +405,28 @@ button {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--main-title-color);
   text-align: center;
-  margin-top: 32px;
+
   margin-bottom: 8px;
+  color: var(--main-title-color);
 }
 
 .team-text {
+  font-weight: 400;
+  font-size: 16px;
   letter-spacing: 0.02em;
   line-height: 1.5;
-  color: var(--main-text-color);
+
 
   text-align: center;
-  margin-bottom: 32px;
+  color: var(--main-text-color);
 }
 
 
 
 /**
   |============================
-  | PF section - 2 page
+  | PF - Section №1 - ALL
   |============================
 */
 
@@ -479,7 +497,6 @@ border-top: none;
   letter-spacing: 0.02em;
   
   margin-bottom: 8px;
-
 }
 
 .pf-text-text {
@@ -490,29 +507,31 @@ border-top: none;
 
 
 
-
 /**
   |============================
-  | Footer - section
+  | Footer- Section №1
   |============================
 */
 
 .footer {
-  
   font-size: 16px;
   line-height: 1.5;
-  background-color: var(--footer-bg-color);
-  color: var(--third-logo-color);
-
   font-weight: 400;
   padding: 100px 0;
+
+  background-color: var(--footer-bg-color);
+  color: var(--third-logo-color);
 }
 
 .footer-logo{
   display: inline-block;
   margin-bottom: 16px;
+  min-width: 115px;
+  margin-right: 0px;
 }
 
 .footer-text{
-  width: 265px;
+  width: 264px;
+  font-weight: 400;
+  font-size: 16px;
 }
